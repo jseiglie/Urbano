@@ -42,7 +42,7 @@ npm run start
 ``` bash 
 cd server
 npm install
-#if you have installed nodemon globally (`npm install nodemon -g` to install it)
+#if you have installed nodemon globally (to install it: npm install nodemon -g)
 nodemon index.js
 #if you dont (you'll have to manually restart the server eveytime you modify the code)
 node index.js
