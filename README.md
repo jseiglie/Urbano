@@ -1,10 +1,56 @@
-# Multicontainer application
+## Dockered PERN stack ready to be used!
 
-Codeching - video 8 - Dockerizing a React application with Node.js Postgres and NginX - dev and prod - step by step - PART 1
+It contains React 18 client, Node.js backend, PostgreSQL and Nginx
+
+### Dependencies(`npm install`)
+- Back-end:
+- - "body-parser"
+- - "cors"
+- - "dotenv"
+- - "express"
+- - "pg"
+- - "pg-hstore"
+- - "sequelize"
+
+- Front-end:
+- - React 18
+- - react-router-dom
 
 
-It contains React client, Node.js backend, PostgreSQL and Nginx
+## Stating the template
 
-You can run it in development mode: docker-compose up --build
-It contains Dockerfiles for client, server which you should push to your docker hub to be able
-to pull them down when in next tutorial we will use them in Kubernetes.
+You dont need to have the front/backend running to use the dockerized version.
+
+### Start dockerized app:
+
+``` bash 
+docker-compose up --build
+```
+
+Everytime you modify the client or the server and you build it again, it will implement the changes
+
+### Start Back-end:
+
+``` bash 
+cd client
+npm install
+npm run start
+```
+
+### Start Back-end
+
+``` bash 
+cd server
+npm install
+#if you have installed nodemon globally (`npm install nodemon -g` to install it)
+nodemon index.js
+#if you dont (you'll have to manually restart the server eveytime you modify the code)
+node index.js
+```
+
+
+Dockerfiles for client and server are provided
+
+Thanks!
+
+Javier Seiglie
